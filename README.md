@@ -1,2 +1,12 @@
-# legal
-Centralized hosting for Privacy Policies, Terms &amp; Conditions, and publishing compliance documentation for TRI TECHNOLOGIES mobile applications.
+# TRI TECHNOLOGIES - Legal Portal
+
+This repository hosts the official Privacy Policies, Terms of Service, and compliance documentation for applications published by **TRI TECHNOLOGIES**.
+
+## App Directories
+
+### 🃏 Memory Match Game
+* **Privacy Policy URL**: 
+* **App Store Listing**: Google Play Store
+
+---
+For inquiries or support, please contact legal@tritechnologies3@gmail.com.
