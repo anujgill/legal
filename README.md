@@ -21,4 +21,4 @@ This repository hosts the official Privacy Policies, Terms of Service, and compl
 * **App Store Listing**: Google Play Store
 ---
 
-For inquiries or support, please contact legal@tritechnologies3@gmail.com.
+For inquiries or support, please contact software.a2h@gmail.com.
