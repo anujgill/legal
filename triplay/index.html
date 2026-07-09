@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — TriPlay by A2H Software</title>
+  <meta name="description" content="Privacy Policy for TriPlay, a free mobile puzzle game developed by A2H Software. Understand how we handle your data." />
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:           #0f0c29;
+      --bg-card:      #1a1040;
+      --bg-surface:   rgba(255, 255, 255, 0.04);
+      --border:       rgba(167, 139, 255, 0.18);
+      --accent:       #a78bff;
+      --accent-dim:   rgba(167, 139, 255, 0.65);
+      --text-primary: #f0ece8;
+      --text-body:    rgba(240, 236, 232, 0.75);
+      --text-muted:   rgba(240, 236, 232, 0.4);
+      --gold:         #f0c36b;
+      --radius-sm:    8px;
+      --radius-md:    14px;
+      --radius-lg:    20px;
+      --radius-xl:    28px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-body);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* ── Layout ── */
+    .page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* ── Hero Header ── */
+    .hero {
+      text-align: center;
+      padding: 48px 24px 40px;
+      background: linear-gradient(135deg, rgba(124, 92, 252, 0.25) 0%, rgba(124, 92, 252, 0.06) 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      margin-bottom: 36px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: -60px;
+      width: 200px;
+      height: 200px;
+      background: rgba(124, 92, 252, 0.12);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px;
+      right: -40px;
+      width: 160px;
+      height: 160px;
+      background: rgba(167, 139, 255, 0.08);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-icon {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      letter-spacing: 0.4px;
+      margin-bottom: 16px;
+    }
+
+    .date-badge {
+      display: inline-block;
+      background: rgba(124, 92, 252, 0.2);
+      border: 1px solid rgba(167, 139, 255, 0.3);
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    /* ── Intro ── */
+    .intro {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+      margin-bottom: 32px;
+      font-style: italic;
+      color: var(--text-body);
+      font-size: 14.5px;
+      line-height: 1.75;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h2 {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--accent);
+      letter-spacing: 0.2px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section p {
+      font-size: 14.5px;
+      color: var(--text-body);
+      line-height: 1.8;
+      margin-bottom: 10px;
+      white-space: pre-line;
+    }
+
+    .section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── No-data highlight ── */
+    .highlight-box {
+      background: rgba(82, 201, 138, 0.08);
+      border: 1px solid rgba(82, 201, 138, 0.25);
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      margin: 12px 0 8px;
+      font-size: 14px;
+      color: #7ee8aa;
+    }
+
+    /* ── Closing ── */
+    .closing {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 28px;
+      margin-top: 16px;
+      text-align: center;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .footer-logo {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--text-primary);
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.3px;
+    }
+
+    .footer a {
+      color: var(--accent-dim);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .page {
+        padding: 24px 16px 60px;
+      }
+
+      .hero {
+        padding: 36px 16px 28px;
+        border-radius: var(--radius-lg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Hero -->
+    <header class="hero">
+      <span class="hero-icon">🔒</span>
+      <h1>Privacy Policy</h1>
+      <p class="hero-subtitle">TriPlay &mdash; by A2H Software</p>
+      <span class="date-badge">Effective: July 9, 2026</span>
+    </header>
+
+    <!-- Intro -->
+    <p class="intro">
+      This Privacy Policy describes how A2H Software (&ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) handles information
+      when you use TriPlay (the &ldquo;App&rdquo;). We are committed to protecting your privacy. This policy is written
+      in plain language so you can understand exactly what we do &mdash; and do not &mdash; do with your information.
+    </p>
+
+    <!-- Section 1 -->
+    <div class="section">
+      <h2>1. Information We Collect</h2>
+      <p>
+        TriPlay does not collect, transmit, or share any personal information. We do not ask for your name,
+        email address, phone number, location, or any other identifying information.
+      </p>
+      <p>
+        The only data the App stores is your game progress (current level, coins earned, items unlocked, and
+        settings such as sound and haptic preferences). This data is stored exclusively on your local device
+        using the device&rsquo;s built-in storage (SQLite). It never leaves your device.
+      </p>
+      <div class="highlight-box">
+        ✅ &nbsp;No personal data is ever collected, stored on our servers, or shared with third parties.
+      </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+      <h2>2. Data We Do Not Collect</h2>
+      <p>To be explicit, we do not collect or access any of the following:</p>
+      <p>
+        &bull; Personal identifiers (name, email, phone, address)<br />
+        &bull; Device identifiers (advertising ID, IMEI, serial number)<br />
+        &bull; Location data (GPS, IP address, or approximate location)<br />
+        &bull; Usage analytics or crash reports sent to our servers<br />
+        &bull; Camera, microphone, contacts, or any device sensors<br />
+        &bull; Browsing history or data from other apps
+      </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+      <h2>3. Local Storage</h2>
+      <p>
+        Your game progress is saved automatically on your device so that your level, coins, and unlocked items
+        persist between sessions. This data is stored in an on-device SQLite database and is never transmitted anywhere.
+      </p>
+      <p>
+        You can delete this data at any time by clearing the app&rsquo;s storage in your device settings, or by
+        uninstalling the App. Clearing app data will reset your game progress.
+      </p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section">
+      <h2>4. Third-Party Services</h2>
+      <p>
+        TriPlay is distributed through the Google Play Store. Google may collect certain information in accordance
+        with their own Privacy Policy as part of operating the Play Store. We encourage you to review
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&rsquo;s Privacy Policy</a>.
+      </p>
+      <p>
+        The App itself does not integrate any third-party analytics SDKs, advertising networks, crash reporting
+        tools, or social media platforms.
+      </p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section">
+      <h2>5. Children&rsquo;s Privacy</h2>
+      <p>
+        TriPlay is designed to be suitable for all ages. Because we do not collect any personal information from
+        any user, there is no risk to children&rsquo;s privacy. We comply with applicable children&rsquo;s privacy laws,
+        including the Children&rsquo;s Online Privacy Protection Act (COPPA) and Google Play&rsquo;s Families Policy.
+      </p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section">
+      <h2>6. Data Security</h2>
+      <p>
+        Because we do not collect or transmit any personal data, the risk of a data breach involving your personal
+        information is zero. Your game data remains on your device, protected by your device&rsquo;s own security mechanisms.
+      </p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <h2>7. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in the App or applicable laws. When
+        we make changes, we will update the &ldquo;Effective Date&rdquo; at the top of this document. We encourage you to
+        review this policy periodically.
+      </p>
+      <p>
+        Continued use of the App after a revised Privacy Policy is posted constitutes your acceptance of the
+        updated policy.
+      </p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+      <h2>8. Your Rights</h2>
+      <p>
+        Since we do not collect any personal data, there is no personal data for us to provide, correct, or delete
+        on our end. All game data resides on your own device, and you have full control over it through your
+        device&rsquo;s app settings.
+      </p>
+      <p>
+        If you have any questions about your privacy or believe something in this policy is inaccurate, please
+        contact us and we will respond promptly.
+      </p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section">
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy, please contact us:
+      </p>
+      <p>
+        <strong style="color: #f0ece8;">A2H Software</strong><br />
+        Email: <a href="mailto:support@a2hsoftware.com">support@a2hsoftware.com</a>
+      </p>
+    </div>
+
+    <!-- Closing -->
+    <div class="closing">
+      This Privacy Policy is effective as of July 9, 2026. Thank you for trusting TriPlay.
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logo">TriPlay</div>
+      <p class="footer-copy">A2H Software &copy; 2026 &mdash; All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
